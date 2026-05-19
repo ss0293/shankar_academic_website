@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ss0293.github.io/shankar_academic_website/sitemap.xml

@@ -1,0 +1,33 @@
+name: Lint HTML & links
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  htmlhint:
+    name: HTMLHint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Install HTMLHint
+        run: npm install --no-save htmlhint
+      - name: Run HTMLHint
+        run: npx htmlhint "*.html"
+
+  lychee:
+    name: Link checker
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run Lychee
+        uses: lycheeverse/lychee-action@v2
+        with:
+          # Check external + internal links; treat 429 as ok.
+          args: --accept 200,201,202,203,204,206,429 --max-concurrency 4 --no-progress './**/*.html' './**/*.md'
+          fail: false

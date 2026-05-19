@@ -1,0 +1,49 @@
+cff-version: 1.2.0
+title: "Shankar Sharma — academic website and research portfolio"
+message: "If you reference this website or its content, please cite it as below."
+type: software
+authors:
+  - given-names: Shankar
+    family-names: Sharma
+    email: shankar.sharma@unsw.edu.au
+    affiliation: "Climate Change Research Centre (CCRC), UNSW Sydney"
+    orcid: "https://orcid.org/0000-0001-7008-5757"
+repository-code: "https://github.com/ss0293/shankar_academic_website"
+url: "https://ss0293.github.io/shankar_academic_website/"
+keywords:
+  - urban climate
+  - satellite precipitation
+  - GPM IMERG
+  - WRF
+  - Local Climate Zones
+  - remote sensing
+  - climate data analysis
+license: MIT
+license-url: "https://opensource.org/licenses/MIT"
+version: "1.0.0"
+date-released: "2026-05-19"
+
+# Suggested citation for the flagship publication referenced on this site:
+preferred-citation:
+  type: article
+  title: "Mapping urban dynamics in Greater Sydney — a scalable multi-decadal local climate zone classification approach"
+  authors:
+    - given-names: Shankar
+      family-names: Sharma
+      orcid: "https://orcid.org/0000-0001-7008-5757"
+    - given-names: Jason P.
+      family-names: Evans
+    - given-names: Andrew
+      family-names: Pitman
+    - given-names: Negin
+      family-names: Nazarian
+    - given-names: Mathew J.
+      family-names: Lipson
+    - given-names: Carlos
+      family-names: Lopez-Bravo
+  journal: "PLOS Climate"
+  year: 2025
+  volume: 4
+  issue: 8
+  start: e0000677
+  doi: "10.1371/journal.pclm.0000677"

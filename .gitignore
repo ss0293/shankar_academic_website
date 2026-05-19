@@ -1,0 +1,78 @@
+# ──────────────────────────────────────────────────────────────
+# Shankar Sharma — academic website
+# ──────────────────────────────────────────────────────────────
+
+# OS metadata
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# Editors / IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.settings/
+
+# Python (for any analysis notebooks shipped alongside)
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+.env
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Node / build tools (only if added later)
+node_modules/
+package-lock.json
+yarn.lock
+dist/
+.cache/
+
+# Climate / scientific data — never commit raw datasets
+*.nc
+*.nc4
+*.grb
+*.grib
+*.grib2
+*.h5
+*.hdf
+*.hdf5
+*.zarr/
+*.tif
+*.tiff
+*.geotiff
+data/raw/
+data/processed/
+data/cache/
+
+# WRF outputs and large model artefacts
+wrfout_*
+wrfrst_*
+rsl.error.*
+rsl.out.*
+*.exe
+*.x
+
+# Local builds / logs
+logs/
+*.log
+*.tmp
+
+# Large media (commit a smaller compressed version instead)
+*.mov
+*.mp4
+*.avi
